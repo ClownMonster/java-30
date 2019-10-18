@@ -42,7 +42,6 @@ static Scanner sc = new Scanner(System.in);
     Float img = i1 / i2;
     System.out.println("Reultant complex number:");
     System.out.println(real + " +i " + img);
-    return;
     }
 
   }
