@@ -1,7 +1,9 @@
 import java.util.*;
-public class complex{
 
-static Scanner sc = new Scanner(System.in);
+
+public class complex{
+  
+  static Scanner sc = new Scanner(System.in);
 
   void add(Float r1, Float i1,Float r2,Float i2)
   {
@@ -52,7 +54,7 @@ static Scanner sc = new Scanner(System.in);
     public static void main(String[] args)
     {
 
-        while(true)
+        while(true) /* for continueous loop execution untill exit command is pressed */
         {
           System.out.println("*******Complex Calci Menu*********");
           System.out.println("1.Addition\n1.Substraction\n3.Multiplication\n4.Division\n5.Terminate-Program");
