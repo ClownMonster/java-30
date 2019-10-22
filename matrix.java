@@ -3,10 +3,10 @@ import java.util.*;
 class matrix{
 
 	static Scanner sc =  new Scanner(System.in);
-	int A[][], B[][], C[][];
+	int A[][], B[][], C[][]; 
 
-	matrix(int r1 , int c1, int r2, int c2)
-	{
+	matrix(int r1 , int c1, int r2, int c2) /* constructor to initalize the matrix */
+	{  
 
 		A =  new int[r1][c1];
 		B =  new int[r1][c2];
@@ -14,7 +14,7 @@ class matrix{
 	}
 
 
-	void matrix1_input(int row1, int col1)
+	void matrix1_input(int row1, int col1) /* intaking elements for first matrix */
 	{
 		System.out.println("\nEnter the Elements of the first matrix : ");
 		for(int i=0; i< row1; i++)
@@ -24,7 +24,7 @@ class matrix{
 		}
 	}
 
-	void matrix2_input(int row2, int col2)
+	void matrix2_input(int row2, int col2) /* intaking elements for second matrix */
 	{
 		System.out.println("Enter the Elements of the first matrix : ");
 		for(int i=0; i< row2; i++)
@@ -35,12 +35,12 @@ class matrix{
 	}
 
 
-	void Multiply(int r1, int c1, int r2 , int c2)
+	void Multiply(int r1, int c1, int r2 , int c2)  /* method for matrix multiplication */
 	{  int sum;
 		for(int i = 0; i<r1;i++)
 		{
 			for(int j = 0; j<c2;j++)
-			{   sum = 0;
+			{   sum = 0;  // re-initialization to zero after eacch iteration */
 				for(int k = 0;k<r2;k++)
 					sum  = sum + (A[i][k]*B[k][j]);
 
@@ -52,7 +52,7 @@ class matrix{
 	}
 
 
-	void Print_matrix(int r1 , int c2)
+	void Print_matrix(int r1 , int c2) /* method to print Elements of the resultant matrix */
 	{
 
 		System.out.println("The Resultant Matrix is : ");
