@@ -2,7 +2,7 @@ import java.util.*;
 
 class matrix{
 
-	static Scanner sc =  new Scanner(System.in);
+	static Scanner sc =  new Scanner(System.in); /* Scanner object to get the user input */
 	int A[][], B[][], C[][]; 
 
 	matrix(int r1 , int c1, int r2, int c2) /* constructor to initalize the matrix */
@@ -83,7 +83,7 @@ class matrix{
 				int row2 = sc.nextInt();
 				int col2 = sc.nextInt();
 
-				if(col1 != row2)
+				if(col1 != row2) /* condition to check whether the multiplication is possible */
 				{
 					System.out.println("\nMatrix multiplication Not Posiible\n Enter the Correct order of the matrixes");
 					break;
@@ -93,11 +93,11 @@ class matrix{
 				{
 					switch(choice)
 					{
-						case 1:  matrix ob = new matrix(row1,col1,row2,col2);
-								 ob.matrix1_input(row1, col1);
-								 ob.matrix2_input(row2, col2);
-								 ob.Multiply(row1,col1,row2,col2);
-								 ob.Print_matrix(row1,col2);
+						case 1:  matrix ob = new matrix(row1,col1,row2,col2); /* creating the object for the class and calling the constructor to initialize the matrix */
+								 ob.matrix1_input(row1, col1); /* call for intaking first matrix elements *?
+								 ob.matrix2_input(row2, col2); /* call for intaking second matrix elements *?
+								 ob.Multiply(row1,col1,row2,col2); /* calling the method to perform multiplication */
+								 ob.Print_matrix(row1,col2); /* method call to print the the resultant matrix */
 								 break;
 
 					    default : System.out.println("Invalid choice");
