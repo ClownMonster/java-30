@@ -1,6 +1,4 @@
 import java.util.*;
-
-
 public class complex{
   
   static Scanner sc = new Scanner(System.in);
@@ -74,20 +72,19 @@ public class complex{
           switch(a)
           {
             case 1: ob.add(r1,i1,r2,i2);
-                    break;
+                      break;
             case 2: ob.sub(r1,i1,r2,i2);
-                    break;
+                      break;
             case 3: ob.multi(r1,i1,r2,i2);
-                    break;
+                      break;
             case 4 : ob.div(r1,i1,r2,i2);
-                    break;          
+                      break;          
             default : System.out.println("Invalid Choice");
-                    break;
+                      break;
 
           }
 
         }
-
 
     }
 
