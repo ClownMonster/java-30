@@ -1,5 +1,7 @@
-import java.util.*;
+import java.util.*; /* to reduce processing time import only Scanner */
+import java.io.*;
 
+/* abstract class with two methods */
 abstract class vehicle{
   Scanner sc = new Scanner(System.in);
   int year ;
@@ -17,7 +19,7 @@ class twowheeler extends vehicle {
   String type; Scanner sc = new Scanner(System.in);
   int tyre;
   twowheeler(int y, int t) {
-    super(y);
+    super(y); /* Acessing from  Super class,, try to make it final */
     tyre = t;
 
   }
@@ -41,7 +43,7 @@ class fourwheeler extends vehicle {
   int weight, height;
   Scanner sc = new Scanner(System.in);
   fourwheeler(final int y, final int w) {
-    super(y);
+    super(y); /* Acessing from  Super class,, try to make it final */
     weight = w;
     
   }
@@ -66,7 +68,7 @@ class mytwowheeler extends twowheeler{
   String color;
   Scanner sc = new Scanner(System.in);
   mytwowheeler(int y, int t, int n) {
-    super(y, t);
+    super(y, t);/* Acessing from  Super class,, try to make it final */
     engno = n;
     
   }
