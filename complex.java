@@ -1,9 +1,9 @@
 import java.util.*;
 public class complex{
   
-  static Scanner sc = new Scanner(System.in);
+  static Scanner sc = new Scanner(System.in); /* Scanner Object to get input from user */
 
-  void add(Float r1, Float i1,Float r2,Float i2)
+  void add(Float r1, Float i1,Float r2,Float i2) /* Addition method */
   {
    Float real = r1 + r2;
    Float img = i1 + i2 ;
