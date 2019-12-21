@@ -9,7 +9,7 @@ public class complex{
   {
    Float real = r1 + r2;
    Float img = i1 + i2 ;
-   System.out.println("Reultant complex number:");
+   System.out.println("Result:");
    System.out.println(real+" +i "+img);
   }
 
