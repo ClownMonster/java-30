@@ -44,25 +44,25 @@ class Circle
  
 }
 
-class radius{
+class radius{ /* extendable class */
   Double r;
-  radius(Double r)
+  radius(Double r) /* main constructor */
   {
     this.r = r;
   }
 
-  Double area()
+  Double area() /* common method */
   {
     return 3.14*r*r;
   }
 
 }
 
-class sector extends radius{
+class sector extends radius{ /* sector class extending main class */
   Double a;
   sector(Double r, Double a)
   {
-    super(r);
+    super(r); /* parent data */
     this.a = a;
   }
 
@@ -77,7 +77,7 @@ class segment extends radius {
 
   segment(Double r, Double l) 
   {
-    super(r);
+    super(r); /* parent data */
     this.l = l;
   }
 
