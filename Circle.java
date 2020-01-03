@@ -3,7 +3,7 @@ import java.util.*;
 
 class Circle
 { 
-  static Scanner sc = new Scanner(System.in);
+  static Scanner sc = new Scanner(System.in); /* static variable so that it can be access outside the class */
   public static void main(String args[])
   {
     int ch;
@@ -15,7 +15,7 @@ class Circle
       switch(ch)
       {
         case 1: System.out.println("\nEnter the radius of the radius"); 
-                radius ob1 = new radius(sc.nextDouble());
+                radius ob1 = new radius(sc.nextDouble()); /* object for class radius */
                 System.out.println("Area : "+ ob1.area());
                 break;
         case 2: System.out.println("\nEnter the radius and angle of the radius");
