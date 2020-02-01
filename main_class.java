@@ -1,7 +1,7 @@
 import java.util.*; /* to reduce processing time import only Scanner */
 import java.io.*;
 
-/* abstract class with two methods */
+/* abstract class with two absract methods */
 abstract class vehicle{
   Scanner sc = new Scanner(System.in);
   int year ;
