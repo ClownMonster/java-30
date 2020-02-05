@@ -66,7 +66,7 @@ class sector extends radius{ /* sector class extending main class */
     this.a = a;
   }
 
-  Double area() 
+  Double area() /*method overriding*/
   {
     return (0.5*r*r*a);
   }
@@ -81,7 +81,7 @@ class segment extends radius {
     this.l = l;
   }
 
-  Double area()
+  Double area() /*method overriding*/
    {
     return (r*r*((r-l)/r)-(r-l)*Math.sqrt(2*r*l-(l*l)));
   }
