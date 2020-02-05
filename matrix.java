@@ -2,7 +2,7 @@ import java.util.*;
 
 class matrix{
 
-	static Scanner sc =  new Scanner(System.in); /* Scanner object to get the user input */
+	static Scanner sc =  new Scanner(System.in); /* Scanner object to get the user input.. static since it can be accessed in static methods */
 	int A[][], B[][], C[][]; 
 
 	matrix(int r1 , int c1, int r2, int c2) /* constructor to initalize the matrix */
